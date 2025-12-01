@@ -50,13 +50,13 @@ The simulation was run with:
 -python Decoder.py
 ##Compile Verilog files:
 
--iverilog -o pipeline.out *.v
+-`iverilog -o pipeline.out *.v`
 
 ##Run the simulation:
--vvp pipeline.out
+-`vvp pipeline.out`
 
 ## Open results in GTKWave:
--gtkwave pipeline.vcd
+-`gtkwave pipeline.vcd`
 
 1. Generate instruction memory:
 
