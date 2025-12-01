@@ -1,0 +1,15 @@
+ADDI $t0, $zero, 0
+ADDI $t1, $zero, 5
+ADDI $t2, $zero, 3
+LW $t3, 0($t0)
+BEQ $t3, $t2, found
+ADDI $t0, $t0, 1
+J loop
+found:
+SW $t0, 20($zero)
+J end
+not_found:
+ADDI $t0, $zero, -1
+SW $t0, 20($zero)
+end:
+NOP

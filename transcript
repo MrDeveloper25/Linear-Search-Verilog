@@ -1,0 +1,59 @@
+python generacion_instructions.py
+# C:\Python313\python.EXE: can't open file 'D:\\SAID\\Escritorio\\proyecto-final-decoder\\verilog\\generacion_instructions.py': [Errno 2] No such file or directory
+python Decodificador.py
+iverilog -o pipeline.out *.v
+vvp pipeline.out
+# WARNING: instr_mem.v:13: $readmemh(instructions.mem): Not enough words in the file for the requested range [0:1023].
+# VCD info: dumpfile pipeline.vcd opened for output.
+# Simulation finished
+# tb_pipeline.v:22: $finish called at 2020000 (1ps)
+
+python Decodificador.py iverilog -o pipeline.out *.v vvp pipeline.out
+iverilog -o pipeline.out *.v vvp pipeline.out
+# vvp: No such file or directory
+# Preprocessor failed with 1 errors.
+python Decodificador.py
+iverilog -o pipeline.out *.v
+vvp pipeline.out
+# VCD info: dumpfile pipeline.vcd opened for output.
+# Simulation finished
+# tb_pipeline.v:22: $finish called at 2020000 (1ps)
+
+gtkwave pipeline.vcd
+# WM Destroy
+# 
+# GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+# 
+# [0] start time.
+# [2020000] end time.
+
+python Decodificador.py
+iverilog -o pipeline.out *.v
+vvp pipeline.out
+# VCD info: dumpfile pipeline.vcd opened for output.
+# Simulation finished
+# tb_pipeline.v:22: $finish called at 2020000 (1ps)
+
+vvp pipeline.out
+# VCD info: dumpfile pipeline.vcd opened for output.
+# Simulation finished
+# tb_pipeline.v:22: $finish called at 2020000 (1ps)
+gtkwave pipeline.vcd 
+# GTKWAVE | Reloading waveform...
+# GTKWAVE | ...waveform reloaded
+# GTKWAVE | Reloading waveform...
+# GTKWAVE | ...waveform reloaded
+# GTKWAVE | Reloading waveform...
+# GTKWAVE | ...waveform reloaded
+# WM Destroy
+# 
+# GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+# 
+# [0] start time.
+# [2020000] end time.
+# [0] start time.
+# [2020000] end time.
+# [0] start time.
+# [2020000] end time.
+# [0] start time.
+# [2020000] end time.
