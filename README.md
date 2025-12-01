@@ -52,14 +52,10 @@ Compile Verilog files:
 
 iverilog -o pipeline.out *.v
 
-
-Run the simulation:
-
+##Run the simulation:
 vvp pipeline.out
 
-
-Open results in GTKWave:
-
+## Open results in GTKWave:
 gtkwave pipeline.vcd
 
 1. Generate instruction memory:
